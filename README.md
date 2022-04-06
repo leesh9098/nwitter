@@ -1,5 +1,22 @@
 # 이성훈
 
+[04월 06일]
+### 절대경로 사용하기
+root 위치에 jsconfig.json파일을 생성 후
+```json
+{
+    "compilerOptions": {
+        "baseUrl": "src"
+    },
+    "include": ["src"]
+}
+```
+위 코드를 붙여넣기  
+※주의  
+-> 컴포넌트 파일명이 모듈이름과 겹칠 수 있으니 주의할 것
+
+---
+
 [03월 30일]
 
 ### firebase 생성
