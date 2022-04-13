@@ -1,5 +1,26 @@
 # 이성훈
 
+[04월 13일]
+### firebase와 Github 연동  
+1. 유저 아이콘 클릭
+2. Settings 클릭
+3. 왼쪽 최하단에 Developer settings 클릭
+4. 왼쪽 두 번째 항목 OAuth Apps 클릭
+5. new OAuth App 클릭 후 Application name 설정
+6. firebase에 접속 후 로그인
+7. Authetication 클릭
+8. 두 번째 항목 sign-in-method 클릭
+9. 새 제공업체 추가
+10. GitHub 클릭
+11. 사용 설정 활성화
+12. 제공된 url을 GitHub callback url에 붙여넣기
+13. Homepage Url은 firebase에서 두 번째에 있는 링크를 복사 후 붙여넣기
+14. Register application 클릭
+15. 생성된 클라이언트 ID와 보안 비밀번호를 복사 후 붙여넣기
+16. 저장 버튼 클릭
+
+---
+
 [04월 06일]
 ### 절대경로 사용하기
 root 위치에 jsconfig.json파일을 생성 후
