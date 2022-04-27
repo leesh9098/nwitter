@@ -1,5 +1,27 @@
 # 이성훈
 
+[04월 27일]
+### Firebase DB 다루기
+```javascript
+// 이메일 주소와 비밀번호로 Firebase에 사용자 DB저장
+authService.createUserWithEmailAndPassword(email, password);
+
+// Firebase DB에 저장된 계정으로 로그인
+authService.signInWithEmailAndPassword(email, password);
+```
+
+### 이메일이 중복일 때 에러 메시지 출력
+에러 데이터가 json 형태로 리턴되기 때문에 아래와 같이 사용하면 이메일 중복 에러 메시지를 가져올 수 있음
+```javascript
+try {
+    // 실행할 코드
+} catch(error) {
+    console.log(error.message);
+}
+```
+
+---
+
 [04월 13일]
 ### firebase와 Github 연동  
 1. 유저 아이콘 클릭
