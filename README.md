@@ -1,5 +1,31 @@
 # 이성훈
 
+[05월 04일]
+### react-router-dom v6에서 useHistory
+useHistory가 사라지고 useNavigate로 대체되었음.  
+예시
+```javascript
+// v5
+const history = useHistory();
+history.push("/");
+
+// v6
+const navigate = useNavigate();
+navigate("/");
+```
+
+### react-router-dom v6에서 Redirect
+Redirect가 사라지고 <Navigate>로 대체되었음.  
+```javascript
+// v5
+<Redirect from="*" to="/" />
+
+// v6
+<Route path="*" element={<Navigate replace to="/" />} />
+```
+
+---
+
 [04월 27일]
 ### Firebase DB 다루기
 ```javascript
