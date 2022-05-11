@@ -1,5 +1,30 @@
 # 이성훈
 
+[05월 11일]
+### firestore 사용하기
+- fbase.js에서 firestore를 import 시켜주는데, firebase 버전에 따라 import 방법이
+다르기 때문에 버전을 잘 확인하여 사용할 것  
+```javascript
+// 8버전 이하
+import "firebase/firestore"
+
+// 9버전 이상
+import "firebase/compat/firestore"
+```
+- db 데이터를 가져오려면
+```javascript
+dbService.collection("컬렉션 이름").get();
+```
+- db 데이터를 추가하려면
+```javascript
+dbService.collection("컬렉션 이름").add({
+    data1: data1,
+    data2: data2
+});
+```
+
+---
+
 [05월 04일]
 ### react-router-dom v6에서 useHistory
 useHistory가 사라지고 useNavigate로 대체되었음.  
