@@ -1,5 +1,25 @@
 # 이성훈
 
+[05월 18일]
+### nweet 실시간으로 가져오기
+기존 방식의
+```javascript
+dbService.collection("nweets").get()
+```
+은 브라우저를 새로고침해야 데이터를 가져옴  
+실시간으로 가져오려면
+```javascript
+dbService.collection("nweets").onSnapShot()
+```
+을 사용할 것  
+### nweet 삭제하기
+생성한 nweet을 firestore에서 삭제하려면
+```javascript
+dbService.document.delete();
+```
+
+---
+
 [05월 11일]
 ### firestore 사용하기
 - fbase.js에서 firestore를 import 시켜주는데, firebase 버전에 따라 import 방법이
