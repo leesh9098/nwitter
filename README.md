@@ -7,10 +7,8 @@
 <input type="file" accept="확장자 지정"> // accept는 확장자 지정
 ```
 - FileReader()
-아래는 FileReader()에 대한mdn web docs의 설명
-```
-FileReader 객체는 웹 애플리케이션이 비동기적으로 데이터를 읽기 위하여 읽을 파일을 가리키는File 혹은 Blob 객체를 이용해 파일의 내용을(혹은 raw data버퍼로) 읽고 사용자의 컴퓨터에 저장하는 것을 가능하게 해줍니다.
-```
+아래는 FileReader()에 대한mdn web docs의 설명  
+> FileReader 객체는 웹 애플리케이션이 비동기적으로 데이터를 읽기 위하여 읽을 파일을 가리키는File 혹은 Blob 객체를 이용해 파일의 내용을(혹은 raw data버퍼로) 읽고 사용자의 컴퓨터에 저장하는 것을 가능하게 해줍니다.  
 [링크](https://developer.mozilla.org/ko/docs/Web/API/FileReader)  
 ---
 
