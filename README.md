@@ -74,7 +74,7 @@ navigate("/");
 ```
 
 ### react-router-dom v6에서 Redirect
-Redirect가 사라지고 <Navigate>로 대체되었음.  
+Redirect가 사라지고 `<Navigate>`로 대체되었음.  
 ```javascript
 // v5
 <Redirect from="*" to="/" />
