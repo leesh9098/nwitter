@@ -1,4 +1,22 @@
 # 이성훈
+[06월 08일]
+### firebase의 firestore 및 firestorage의 권한 문제
+- firebase에 firestore, firestorage 데이터를 전송하는 과정에서 다음과 같은 에러가 발생함.  
+```
+Error in snapshot listener: FirebaseError: Missing or insufficient permissions.
+```
+
+- 해결 방안  
+`allow read, write:`가 있는 줄을 `allow read, write: if request.auth != null;`로 수정
+
+### firebase 데이터 조건에 따라 추출
+```javascript
+dbService.collection("컬렉션 이름")
+.where("조건기준", "조건", "값")
+.orderBy("정렬기준", "오름차순 또는 내림차순")
+```
+
+---
 
 [05월 25일]
 ### input 태그의 file 타입으로 파일 업로드하기
@@ -10,6 +28,7 @@
 아래는 FileReader()에 대한mdn web docs의 설명  
 > FileReader 객체는 웹 애플리케이션이 비동기적으로 데이터를 읽기 위하여 읽을 파일을 가리키는File 혹은 Blob 객체를 이용해 파일의 내용을(혹은 raw data버퍼로) 읽고 사용자의 컴퓨터에 저장하는 것을 가능하게 해줍니다.  
 [링크](https://developer.mozilla.org/ko/docs/Web/API/FileReader)  
+
 ---
 
 [05월 18일]
