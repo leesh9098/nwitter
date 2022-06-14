@@ -26,7 +26,6 @@ export default function Nweet({ nweetObj, isOwner }) {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log(nweetObj.id, newNweet);
     }
 
     return (
